@@ -7,16 +7,16 @@ This document serves as a comprehensive checklist for the development of SourceC
   - [x] Create project directory structure for backend (Golang with Plush) in `src/backend`.
   - [x] Create project directory structure for frontend (TypeScript with Vite) in `src/frontend`.
   - [x] Initialize Git repository with a comprehensive `.gitignore` file for Golang and Node.js projects.
-  - [ ] Ensure structure supports separate environments for development and production.
+  - [x] Ensure structure supports separate environments for development and production.
 - [x] **Dependencies Installation**
   - [x] Install backend dependencies (Golang standard library, Plush - github.com/gobuffalo/plush).
   - [x] Install frontend dependencies using pnpm (Vite, TypeScript, TailwindCSS, AlpineJS).
-  - [ ] Provide scripts to install and verify dependencies in both environments.
+  - [x] Provide scripts to install and verify dependencies in both environments.
 - [ ] **Deployment Configuration**
-  - [ ] Configure Nix for reproducible builds with a basic Nix flake for dependency management.
-  - [ ] Set up Docker Compose for containerization, defining services for backend, frontend, and database.
-  - [ ] Ensure configurations support development and production environments with Vite serving Plush-generated HTML.
-  - [ ] Set up initial deployment scripts targeting Fly.io.
+  - [x] Configure Nix for reproducible builds with a basic Nix flake for dependency management.
+  - [x] Set up Docker Compose for containerization, defining services for backend, frontend, and database.
+  - [x] Ensure configurations support development and production environments with Vite serving Plush-generated HTML.
+  - [x] Set up initial deployment scripts targeting Fly.io.
 
 ## Database Setup
 - [ ] **PostgreSQL Configuration**
