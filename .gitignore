@@ -1,17 +1,16 @@
 # Golang
-*.o
-*.a
-*.so
-*.test
-bin/
-vendor/
+src/backend/*.o
+src/backend/*.a
+src/backend/*.so
+src/backend/*.test
+src/backend/bin/
+src/backend/vendor/
 
 # Node.js
-node_modules/
-.DS_Store
-package-lock.json
-.vite/
-dist/
+src/frontend/node_modules/
+src/frontend/package-lock.json
+src/frontend/.vite/
+src/frontend/dist/
 
 # General
 logs/
@@ -19,3 +18,9 @@ logs/
 .env
 build/
 temp/
+
+# Opencode stuff <- NOTE: DO NOT CHANGE THIS!!!
+node_modules
+package-lock.json
+package.json
+opencode.nix
