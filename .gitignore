@@ -1,3 +1,4 @@
 node_modules
-result
-.api-keys
+package-lock.json
+package.json
+shell.nix
