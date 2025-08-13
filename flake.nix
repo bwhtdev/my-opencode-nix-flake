@@ -18,8 +18,7 @@
         dontNpmBuild = true;
         installPhase = ''
           mkdir -p $out/bin
-          cp -r $out/lib/node_modules/opencode/node_modules/opencode-ai/bin/opencode
-$out/bin/opencode
+          cp -r $out/lib/node_modules/opencode/node_modules/opencode-ai/bin/opencode $out/bin/
           chmod +x $out/bin/opencode
           wrapProgram $out/bin/opencode \
             --prefix PATH : ${pkgs.lib.makeBinPath [ pkgs.nodejs_20 ]}
