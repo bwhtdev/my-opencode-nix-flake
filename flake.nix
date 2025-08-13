@@ -17,7 +17,8 @@
         buildInputs = with pkgs; [ nodejs_20 ];
         nativeBuildInputs = with pkgs; [ makeWrapper ];
         installPhase = ''
-          npm i opencode-ai@latest
+          #npm i opencode-ai@latest
+          npm i
           mkdir -p $out/bin
           cp ${self}/run.sh $out/bin/opencode
           chmod +x $out/bin/opencode
