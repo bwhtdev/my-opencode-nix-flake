@@ -11,21 +11,18 @@
       pkgs = import nixpkgs { inherit system; };
     in
     {
-      packages.${system}.default = pkgs.stdenv.mkDerivation {
+      packages.${system}.default = pkgs.buildNpmPackage {
         name = "opencode";
         src = self;
-        buildInputs = with pkgs; [ nodejs_20 ];
-        nativeBuildInputs = with pkgs; [ makeWrapper ];
+        npmDepsHash = "sha256-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX="; # Run `nix build` once to
+  get the real hash
         installPhase = ''
-          mkdir -p $out/bin $out/share/opencode
-          cp -r ${self}/* $out/share/opencode
-          cp $out/share/opencode/run.sh $out/bin/opencode
+          mkdir -p $out/bin
+          cp -r $out/lib/node_modules/opencode-ai/bin/opencode $out/bin/opencode
           chmod +x $out/bin/opencode
           wrapProgram $out/bin/opencode \
             --prefix PATH : ${pkgs.lib.makeBinPath [ pkgs.nodejs_20 ]}
         '';
       };
-
-      defaultPackage.${system} = self.packages.${system}.default;
     };
 }
