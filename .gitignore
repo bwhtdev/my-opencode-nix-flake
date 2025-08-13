@@ -1,4 +1,15 @@
+### Golang
+*.o
+*.a
+*.so
+
+### Node.js
+node_modules/
+.DS_Store
+
+# Opencode stuff
 node_modules
 package-lock.json
 package.json
-shell.nix
+opencode.nix
+

@@ -3,13 +3,13 @@
 This document serves as a comprehensive checklist for the development of SourceCamp Phase 1. It covers all aspects of the project from setup to deployment, ensuring that no step is missed. Use this checklist to track progress and ensure all tasks are completed.
 
 ## Project Setup
-- [ ] **Directory Structure and Git Initialization**
-  - [ ] Create project directory structure for backend (Golang with Plush) in `src/backend`.
-  - [ ] Create project directory structure for frontend (TypeScript with Vite) in `src/frontend`.
-  - [ ] Initialize Git repository with a comprehensive `.gitignore` file for Golang and Node.js projects.
+- [x] **Directory Structure and Git Initialization**
+  - [x] Create project directory structure for backend (Golang with Plush) in `src/backend`.
+  - [x] Create project directory structure for frontend (TypeScript with Vite) in `src/frontend`.
+  - [x] Initialize Git repository with a comprehensive `.gitignore` file for Golang and Node.js projects.
   - [ ] Ensure structure supports separate environments for development and production.
 - [ ] **Dependencies Installation**
-  - [ ] Install backend dependencies (Golang standard library, Plush - github.com/gobuffalo/plush).
+  - [ ] Install backend dependencies (Golang standard library, Plush - github.com/gobuffalo/plush). *Error: 'go' command not found.*
   - [ ] Install frontend dependencies using pnpm (Vite, TypeScript, TailwindCSS, AlpineJS).
   - [ ] Provide scripts to install and verify dependencies in both environments.
 - [ ] **Deployment Configuration**
