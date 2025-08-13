@@ -17,8 +17,9 @@
         buildInputs = with pkgs; [ nodejs_20 ];
         nativeBuildInputs = with pkgs; [ makeWrapper ];
         installPhase = ''
-          mkdir -p $out/bin
-          cp ${self}/run.sh $out/bin/opencode
+          mkdir -p $out/bin $out/share/opencode
+          cp -r ${self}/* $out/share/opencode
+          cp $out/share/opencode/run.sh $out/bin/opencode
           chmod +x $out/bin/opencode
           wrapProgram $out/bin/opencode \
             --prefix PATH : ${pkgs.lib.makeBinPath [ pkgs.nodejs_20 ]}

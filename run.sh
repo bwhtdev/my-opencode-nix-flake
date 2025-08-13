@@ -1,5 +1,5 @@
 #/usr/bin/env bash
 
-npm ci --prefix $(pwd)
+cd "$(dirname "$0")/../share/opencode"
 npm i
 npx opencode-ai
