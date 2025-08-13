@@ -1,36 +1,21 @@
-### Golang
-*.o
-*.a
-*.so
-
-### Node.js
-node_modules/
-.DS_Store
-
-# Opencode stuff
-node_modules
-package-lock.json
-# Comprehensive .gitignore for Golang and Node.js
-
-### Golang
+# Golang
 *.o
 *.a
 *.so
 *.test
 bin/
+vendor/
 
-### Node.js
+# Node.js
 node_modules/
 .DS_Store
 package-lock.json
-package.json
+.vite/
+dist/
 
-### General
+# General
 logs/
 *.log
 .env
 build/
 temp/
-
-opencode.nix
-
