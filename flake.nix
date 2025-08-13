@@ -12,11 +12,12 @@
     in
     {
       packages.${system}.default = pkgs.stdenv.mkDerivation {
-        name = "md-reader";
+        name = "opencode";
         src = self;
         buildInputs = with pkgs; [ nodejs_20 ];
         nativeBuildInputs = with pkgs; [ makeWrapper ];
         installPhase = ''
+          npm i opencode-ai@latest
           mkdir -p $out/bin
           cp ${self}/run.sh $out/bin/opencode
           chmod +x $out/bin/opencode
