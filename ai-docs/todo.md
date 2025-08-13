@@ -8,9 +8,9 @@ This document serves as a comprehensive checklist for the development of SourceC
   - [x] Create project directory structure for frontend (TypeScript with Vite) in `src/frontend`.
   - [x] Initialize Git repository with a comprehensive `.gitignore` file for Golang and Node.js projects.
   - [ ] Ensure structure supports separate environments for development and production.
-- [ ] **Dependencies Installation**
-  - [ ] Install backend dependencies (Golang standard library, Plush - github.com/gobuffalo/plush). *Error: 'go' command not found.*
-  - [ ] Install frontend dependencies using pnpm (Vite, TypeScript, TailwindCSS, AlpineJS).
+- [x] **Dependencies Installation**
+  - [x] Install backend dependencies (Golang standard library, Plush - github.com/gobuffalo/plush).
+  - [x] Install frontend dependencies using pnpm (Vite, TypeScript, TailwindCSS, AlpineJS).
   - [ ] Provide scripts to install and verify dependencies in both environments.
 - [ ] **Deployment Configuration**
   - [ ] Configure Nix for reproducible builds with a basic Nix flake for dependency management.
