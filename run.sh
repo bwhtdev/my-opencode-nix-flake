@@ -1,5 +1,5 @@
 #/usr/bin/env bash
 
-#npm i opencode-ai@latest
+npm ci --prefix $(pwd)
 npm i
 npx opencode-ai
