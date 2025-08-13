@@ -14,7 +14,7 @@
       packages.${system}.default = pkgs.buildNpmPackage {
         name = "opencode";
         src = self;
-        npmDepsHash = "sha256-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX="; # Run `nix build` once to
+        npmDepsHash = "sha256-sGGz0+peviHWmv5UgN4uN7GrQyjFAoUO5//JkfuL1W8="; # Run `prefetch-npm-deps package-lock.json` once to
   get the real hash
         installPhase = ''
           mkdir -p $out/bin
